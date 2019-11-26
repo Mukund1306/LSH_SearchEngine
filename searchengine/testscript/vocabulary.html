@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module vocabulary</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>vocabulary</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cmukund%5Canaconda3%5Csearchengine%5Ctestscript%5Cvocabulary.py">c:\users\mukund\anaconda3\searchengine\testscript\vocabulary.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;-*-&nbsp;coding:&nbsp;utf-8&nbsp;-*-</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="nltk.html">nltk</a><br>
+</td><td width="25%" valign=top><a href="re.html">re</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="vocabulary.html#Vocabulary">Vocabulary</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Vocabulary">class <strong>Vocabulary</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Vocabulary">Vocabulary</a>(excluds_stopwords=False)<br>
+&nbsp;<br>
+A&nbsp;class&nbsp;used&nbsp;to&nbsp;store&nbsp;the&nbsp;vocabulary&nbsp;of&nbsp;our&nbsp;corpus<br>
+...<br>
+&nbsp;<br>
+Attributes<br>
+----------<br>
+vocas&nbsp;:&nbsp;list<br>
+&nbsp;&nbsp;&nbsp;&nbsp;id&nbsp;to&nbsp;word&nbsp;hash&nbsp;list<br>
+vocas_id&nbsp;:&nbsp;dictionary<br>
+&nbsp;&nbsp;&nbsp;&nbsp;word&nbsp;to&nbsp;id&nbsp;hash&nbsp;list<br>
+docfreq&nbsp;:&nbsp;integer<br>
+&nbsp;&nbsp;&nbsp;&nbsp;id&nbsp;to&nbsp;document&nbsp;frequency<br>
+excluds_stopwords:&nbsp;boolean&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;indicator&nbsp;of&nbsp;whether&nbsp;the&nbsp;stop&nbsp;words&nbsp;are&nbsp;to&nbsp;be&nbsp;excluded&nbsp;or&nbsp;not<br>
+&nbsp;<br>
+Methods<br>
+-------<br>
+<a href="#Vocabulary-__getitem__">__getitem__</a>(self,&nbsp;v)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Returns&nbsp;the&nbsp;word&nbsp;identified&nbsp;by&nbsp;v<br>
+&nbsp;<br>
+<a href="#Vocabulary-cut_low_freq">cut_low_freq</a>(self,&nbsp;corpus,&nbsp;threshold=1)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Removes&nbsp;the&nbsp;words&nbsp;of&nbsp;frequency&nbsp;below&nbsp;a&nbsp;threshold<br>
+&nbsp;<br>
+<a href="#Vocabulary-is_stopword_id">is_stopword_id</a>(self,&nbsp;id)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Returns&nbsp;a&nbsp;boolean&nbsp;to&nbsp;indicate&nbsp;whether&nbsp;a&nbsp;specific&nbsp;word&nbsp;is&nbsp;a&nbsp;stop&nbsp;word<br>
+&nbsp;<br>
+<a href="#Vocabulary-size">size</a>(self)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Calculates&nbsp;the&nbsp;size&nbsp;of&nbsp;the&nbsp;vocabulary<br>
+&nbsp;<br>
+<a href="#Vocabulary-term_to_id">term_to_id</a>(self,&nbsp;term0,&nbsp;is_query=False)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Hashes&nbsp;terms&nbsp;to&nbsp;integer&nbsp;IDs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;term0&nbsp;is&nbsp;the&nbsp;term&nbsp;to&nbsp;be&nbsp;hashed<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Vocabulary-__getitem__"><strong>__getitem__</strong></a>(self, v)</dt></dl>
+
+<dl><dt><a name="Vocabulary-__init__"><strong>__init__</strong></a>(self, excluds_stopwords=False)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Vocabulary-cut_low_freq"><strong>cut_low_freq</strong></a>(self, corpus, threshold=1)</dt></dl>
+
+<dl><dt><a name="Vocabulary-doc_to_ids"><strong>doc_to_ids</strong></a>(self, doc)</dt></dl>
+
+<dl><dt><a name="Vocabulary-is_stopword_id"><strong>is_stopword_id</strong></a>(self, id)</dt></dl>
+
+<dl><dt><a name="Vocabulary-query_to_ids"><strong>query_to_ids</strong></a>(self, query)</dt></dl>
+
+<dl><dt><a name="Vocabulary-size"><strong>size</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Vocabulary-term_to_id"><strong>term_to_id</strong></a>(self, term0, is_query=False)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>__all__</strong> = ['Vocabulary']</td></tr></table>
+</body></html>
